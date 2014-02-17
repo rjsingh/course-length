@@ -1,0 +1,12 @@
+{
+    "manifest_version": 2,
+    "name": "Course Length",
+    "description": "Displays the number of minutes for a course.",
+    "version": "0.1",
+    "permissions": [ "https://class.coursera.org/" ],
+    "content_scripts": [
+    {
+        "matches": ["https://class.coursera.org/*/lecture"],
+        "js": ["app.js"]
+    }]
+}
